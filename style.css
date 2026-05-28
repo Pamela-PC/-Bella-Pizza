@@ -78,14 +78,14 @@
 
 .produtos{
   padding: 4rem 0;
-  background-color: #6b0000;
+  background-color: #d7d1bf;
 }
 
 .section-title {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 3rem;
-  color: #4a5d4e;
+  color: #c69e24;
 }
 
 .cards {
@@ -96,12 +96,13 @@
 }
 
 .card {
-  background-color: #4a5d4e;
+  background-color: #d5ddd7;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  min-width: 280px;
-  max-width: 350px;
+  min-width: 200px;
+  max-width: 266px;
+  flex: 1 1 266px;
   transition: transform 0.5s;
 }
 
@@ -123,12 +124,14 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  height: 220px;
 }
 
 .card-content h3 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
   color: #6b0000;
+  font-size: 1.6rem;
 }
 
 .card-content p {
@@ -141,4 +144,5 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #4a5d4e;
+  margin-top: auto;
 }
