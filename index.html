@@ -27,8 +27,16 @@
         <div class="hero-content">
             <h1>Onde a qualidade encontra o sabor da tradição</h1>
             <p>Uma experiência gastronômica feita para quem não abre mão do verdadeiro sabor da pizza</p>
-            <button type="button" class="btn btn-success" >Faça seu pedido aqui!</button>
-        </div>
+
+            
+            <button type="button" class="btn btn-success position-relative" >Faça seu pedido aqui!
+                <span class="badge-oferta">Oferta</span>
+            </button>
+             <div class="alert alert-warning alert-dismissible fade show position-fixed end-0 m-3" role="alert" style="z-index: 1050; max-width: 350px; top: 130px;">
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <strong>Estamos em promoção</strong> de dia dos namorados para casais!
+
+</div>
     </section>
     
 
@@ -60,7 +68,7 @@
                     <img src="img/img8.jpg"alt="Pizza Peperoni Artesanal">
                     <div class="card-content">
                         <h3>Pepperoni Artesanal</h3>
-                        <p>FA combinação perfeita do peperoni defumado com a mussarela</p>
+                        <p>A combinação perfeita do peperoni defumado com a mussarela</p>
                         <span class="price">R$ 53,90</span>
                     </div>
                 </div>
@@ -77,28 +85,125 @@
         </div>    
     </section>
 
-     <section class="sobre" id="sobre">
-        <div class="container">
+    <section class="sobre" id="sobre">
+        <div class="container-sobre">
             <div class="sobre-flex">
                 <div class="sobre-imagem">
-                    <img src="img/img9.jpg" alt=" Fachada da Pizzaria">
+                    <img src="img/img10.jpg" alt=" Fachada da Pizzaria">
+                    </div>
                     <div class="sobre-texto">
-                        <h2>Paixão por Café</h2>
-                        <p>Há mais de 10 anos, o Café Aroma seleciona os mlehores grãos de cafeterias artesanais do Brasil e do mundo.</p>
-                        <p>Nossa missão é proporcionar experiências únicas através de cafés especiais, preparados com técnica e carinho.</p>
+                        <h2>Sobre nós</h2>
+                        <p>Há mais de 40 anos, A Bella Pizza proporcionas as melhores pizzas tradicionais da região.</p>
+                        <p>Nossa missão é proporcionar experiências únicas através de pizzas saborosas, preparados com técnica e carinho.</p>
                         <ul class="beneficios">
-                            <li>✓ Grãos 100% Arábica</li>
-                            <li>✓ Torra artesanal</li>
-                            <li>✓ Origem rastreável</li>
-                            <li>✓ Comércio justo</li>
+                            <li>✓ Massa Artesanal</li>
+                            <li>✓ Produtos de Qualidade</li>
+                            <li>✓ Comércio Tradicional</li>
                         </ul>
                     </div>
-                </div>
             </div>
         </div>
     </section>
 
+    <section class="contato" id="contato"> 
+    <div class="container">
+        <h2>Entre em contato conosco</h2>
+        <div class="info-container">
+            <div class="info-block">
+                <h5>Endereço</h5>
+                <p>Rua das Flores, 123, Centro - São Paulo/SP</p>
+            </div>
+        
+             <div class="info-block">
+                <h5>Telefone</h5>
+                <p>(13) 0000-9999</p>
+            </div>
+        
+            <div class="info-block">
+                <h5>Horário de Funcionamento</h5>
+                <p>Segunda a Sexta: 18H às 00h<br>Sábado: 19h às 02h</p>
+            </div>
 
+        </div>
+    </div>
+
+
+    <div class="container">
+    <div class="row justify-content-center"> 
+        
+        <div class="card col-11 col-md-8 shadow-sm">
+            <div class="card-header">
+                <h2 class="text-center">Formulário de Feedback</h2> 
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="mb-3">
+                        <label class="form-label">Nome:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">E-mail:</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Mensagem:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                    <button class="btn btn-success mt-2" type="button" data-bs-toggle="modal" data-bs-target="#modalSucesso">Enviar</button>
+                    <button class="btn btn-danger mt-2" type="reset">Limpar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="modalSucesso" tabindex="-1" aria-labelledby="modalSucessoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"> <div class="modal-content">
+      
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title text-white" id="modalSucessoLabel">Sucesso!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body ">
+        <p class="mb-0 text-dark">O seu feedback foi enviado com sucesso. Agradecemos a sua participação!</p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bella Pizza</h4>
+                    <p>As melhores pizzas tradicionais italianas da região.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>contato@bellapizza.com.br</p>
+                    <p>(13) 0000-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes sociais</h4>
+                    <p>Instagram | Facebook | Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bela Pizza. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer> 
     
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
